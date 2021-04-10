@@ -1,0 +1,2 @@
+STEAMAPPNAME=dontstarvetogether
+podman run -it --net=host --name=$STEAMAPPNAME-container1 -v /home/andrewk/Development/poddata-$STEAMAPPNAME:/home/steam/poddata $STEAMAPPNAME-container

@@ -1,0 +1,1 @@
+podman exec -it starbound-container1 bash update.sh

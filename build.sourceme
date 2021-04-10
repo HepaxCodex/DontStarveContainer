@@ -1,0 +1,2 @@
+STEAMAPPNAME=dontstarvetogether
+buildah bud -f Dockerfile -t $STEAMAPPNAME-container

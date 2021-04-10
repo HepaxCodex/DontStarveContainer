@@ -1,0 +1,3 @@
+STEAMAPPNAME=dontstarvetogether
+podman stop $STEAMAPPNAME-container1
+podman rm $STEAMAPPNAME-container1
