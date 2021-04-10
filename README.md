@@ -1,4 +1,12 @@
-# SteamContainer
+# Don't Starve Together Steam Container
+
+This is a different approach from the other Steam Container for Starbound.
+At somepoint, the best of breed should be selected.
+
+One of the design goals of this version is to have eveyrthign stored in a data pod.
+The hope was to get steam credentials to cash (Which may not be wise on widely accessable servers).
+
+Rather than include control scripts in the Dockerfile they are not in a folder and copied over.
 
 ## Helpful Sites
 [List of Steam App IDs](https://developer.valvesoftware.com/wiki/Dedicated_Servers_List)
@@ -72,23 +80,6 @@ source interactive.sourceme
 ./install.sh # or ./update.sh
 ```
 
-## Starbound
-
-This setup is required because startbound requires you to be logged into get the downloads.
-This requires entering a password which breaks non-interactive update## Starbound
-
-This setup is required because startbound requires you to be logged into get the downloads.
-This requires entering a password which breaks non-interactive updates.
-Additionally, Steams 2-factor auth sends an email key that must be entered.
-
-```bash
-source interactive.sourceme
-./install.sh # Will Require Password / Steam Key
-exit
-source stop.sourceme # Stop the Container and Cleanup
-source start.sourceme # Start the servevr non-interactive 
-```
-
 ## Don't Starve Together
 NOT IMPLEMENTED YET
 
@@ -108,8 +99,3 @@ Use the following to make the server stop when everyone logs off
 ```
 pause_when_empty = true
 ```
-
-
-## Terraria
-NOT IMPLEMENTED YET 
-[Server Install Instructions](https://terraria.gamepedia.com/Server)
